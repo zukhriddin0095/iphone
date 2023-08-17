@@ -17,8 +17,8 @@ function convertAndDisplay() {
 }
 
     function convertToLatin(text) {
-      let cyrillic = "а б д е ф г ҳ и ж к л м н о п қ р с т у в х й з";
-      let latin = "a b d e f g h i j k l m n o p q r s t u v x y z";
+      let cyrillic = "a b d e f g h i j k l m n o p q r s t u v x y z";
+      let latin = "а б д е ф г ҳ и ж к л м н о п қ р с т у в х й з";
 
       let cyrillicArr = cyrillic.split(" ");
       let latinArr = latin.split(" ");

@@ -11,7 +11,7 @@ const batteryProcent = document.querySelector(".battery");
 Instagram.addEventListener("click", () => {
   location =
     "https://instagram.com/zukhriddin0095?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D";
-})
+}) 
 
 
 clock15.addEventListener("click", () => {
