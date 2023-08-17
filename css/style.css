@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 50px;
+  background: #454545;
+  display: flex;
+  justify-content: center;
+}
+body .iphone {
+  margin: auto;
+  width: 360px;
+  height: 700px;
+  border: 10px solid #000;
+  border-radius: 40px;
+  position: relative;
+  box-shadow: 0px 20px 15px rgba(51, 51, 51, 0.2078431373);
+}
+body .iphone .screen {
+  position: absolute;
+  background-image: url("../images/IPhone.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  z-index: 10px;
+}
+body .iphone .screen .battery__signal {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  right: 50px;
+  top: 10px;
+}
+body .iphone .screen .battery__signal .signal {
+  border: none;
+  background: transparent;
+}
+body .iphone .screen .battery__signal .signal i {
+  color: #fff;
+}
+body .iphone .screen .battery__signal .battery {
+  border: none;
+  background: transparent;
+}
+body .iphone .screen .battery__signal .battery i {
+  color: #fff;
+}
+body .iphone .screen .icons-btn {
+  margin-top: 40px;
+  justify-content: center;
+  display: flex;
+}
+body .iphone .screen .icons-btn button {
+  border: none;
+  margin: 10px;
+  z-index: 100;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px rgba(51, 51, 51, 0.2509803922);
+  cursor: pointer;
+  transform: transform 400ms ease-in-out;
+  transition: 0.2s;
+}
+body .iphone .screen .icons-btn button:hover {
+  transform: scale(1.05);
+}
+body .iphone .screen .icons-btn .app:nth-child(1) {
+  background: url("../images/app-store (1).png");
+  background-size: cover;
+  background-position: center;
+}
+body .iphone .screen .icons-btn .app:nth-child(2) {
+  background: url("../images/apple-store.png");
+  background-size: cover;
+  background-position: center;
+}
+body .iphone .screen .icons-btn .app:nth-child(3) {
+  background: url("../images/books.png");
+  background-size: cover;
+  background-position: center;
+}
+body .iphone .screen .icons-btn .app:nth-child(4) {
+  background: url("../images/camera.png");
+  background-size: cover;
+  background-position: center;
+}
+body .iphone .screen .icons-btn .app_2_row:nth-child(1) {
+  background: url("../images/contacts.png");
+  background-size: cover;
+  background-position: center;
+}
+body .iphone .screen .icons-btn .app_2_row:nth-child(2) {
+  background: url("../images/books.png");
+  background-size: cover;
+  background-position: center;
+}
+body .iphone .screen .icons-btn .app_2_row:nth-child(4) {
+  background: url("../images/music_7721633.png");
+  background-size: cover;
+  background-position: center;
+}
+body .iphone .screen .icons-btn .app_2_row:nth-child(3) {
+  background: url("../images/notes.png");
+  background-size: cover;
+  background-position: center;
+}
+body .iphone .screen .icons-btn .app_3_row:nth-child(1) {
+  background: url("../images/instagram_2111463.png");
+  background-size: cover;
+  background-position: center;
+}
+body .iphone .screen .icons-btn .app_3_row:nth-child(2) {
+  background: url("../images/ios14-clock-app-icon.png");
+  background-size: cover;
+  background-position: center;
+}
+body .iphone .screen .icons-btn .app_3_row:nth-child(3) {
+  background: url("../images/youtube_1384060.png");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.7607843137);
+}
+body .iphone .screen .icons-btn .app_3_row:nth-child(4) {
+  background: url("../images/telegram_2504941.png");
+  background-size: contain;
+  background-position: center;
+}
+body .iphone .screen .icons-btn .app_4_row:nth-child(1) {
+  background: url("../images/calculator.png");
+  background-size: cover;
+  background-position: center;
+}
+body .iphone .screen .icons-btn .app_4_row:nth-child(2) {
+  background: url("../images/calendar.png");
+  background-size: cover;
+  background-position: center;
+}
+body .iphone .screen .icons-btn .app_4_row:nth-child(3) {
+  background: url("../images/clock.png");
+  background-size: cover;
+  background-position: center;
+}
+body .iphone .screen .icons-btn .app_4_row:nth-child(4) {
+  background: url("../images/my-shortcuts.png");
+  background-size: cover;
+  background-position: center;
+}
+body .iphone .notch {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  background: #000000;
+  width: 200px;
+  height: 30px;
+  z-index: 50;
+  border-radius: 0 0 20px 20px;
+}
+body .iphone .notch .camera {
+  position: absolute;
+  bottom: 8px;
+  right: 20px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.2rem solid #1e1f22;
+  background: rgba(68, 123, 181, 0.6509803922);
+}
+body .iphone .notch .speaker {
+  position: absolute;
+  right: 4rem;
+  width: 5.2rem;
+  height: 0.6rem;
+  background: #333333;
+  border-radius: 0.2rem;
+}
+body .iphone .bottom {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  bottom: 25px;
+  left: 40px;
+}
+body .iphone .bottom .flashlight {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  background-image: url("../images/flashlight_115149.png");
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+body .iphone .bottom span {
+  cursor: pointer;
+  color: #b1afaf;
+}
+body .iphone .bottom .camera_bottom {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  background-image: url("../images/camera.png");
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.white {
+  background: #fff;
+}
+
+.clok_box {
+  width: 300px;
+  height: 320px;
+  position: absolute;
+  top: 150px;
+  right: 20px;
+  border-radius: 20px;
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  background: #2f363e;
+  box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clok_box .clock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #2f363e;
+  border-radius: 50%;
+  box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clok_box .clock::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #2f363e;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  z-index: 100;
+}
+.clok_box .clock span {
+  position: absolute;
+  inset: 20px;
+  color: #fff;
+  text-align: center;
+  transform: rotate(calc(30deg * var(--i)));
+}
+.clok_box .clock span b {
+  font-size: 2em;
+  opacity: 0.25;
+  font-weight: 600;
+  display: inline-block;
+  transform: rotate(calc(-30deg * var(--i)));
+}
+.clok_box .clock .circle {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.clok_box .clock .circle i {
+  position: absolute;
+  width: 6px;
+  height: 50%;
+  background: var(--clr);
+  opacity: 0.75;
+  transform-origin: bottom;
+  transform: scaleY(0.5);
+  z-index: 10;
+}
+.clok_box .clock .circle:nth-child(1) i {
+  width: 2px;
+}
+.clok_box .clock .circle:nth-child(2) i {
+  width: 6px;
+}
+.clok_box .clock .circle::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--clr);
+  box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+}
+.clok_box .clock .circle-1 {
+  width: 120px;
+  height: 120px;
+  z-index: 9;
+}
+.clok_box .clock .circle-2 {
+  width: 60px;
+  z-index: 8;
+  height: 60px;
+}
+
+#appAlarm {
+  position: absolute;
+  top: 200px;
+  left: 40px;
+}
+#appAlarm h1 {
+  padding: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #fff;
+  box-shadow: 0 5px 5px #000;
+  border-radius: 15px;
+  text-shadow: -2px -2px 2px #000;
+}
+#appAlarm #current-time {
+  font-size: 45px;
+  font-family: monospace;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 3px 5px 10px #000;
+}
+
+.create-alarm {
+  position: absolute;
+  bottom: 80px;
+  left: 55px;
+}
+.create-alarm h5 {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-family: monospace;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 5px 5px 5px #000;
+}
+.create-alarm .form-actions form .alarm-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.create-alarm .form-actions form .alarm-inputs input {
+  width: 250px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 15px;
+  border: none;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.6039215686);
+  outline: none;
+}
+.create-alarm .form-actions form .alarm-inputs select {
+  margin-left: 80px;
+  width: 90px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 15px;
+  border: none;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.6039215686);
+}
+.create-alarm .form-actions form button {
+  margin-left: 90px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 8px;
+  border: none;
+  background: rgba(245, 245, 220, 0.325);
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 80px;
+  left: 15px;
+}
+.close .Close_title {
+  color: rgba(161, 161, 161, 0.7333333333);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  text-shadow: 5px 5px 5px #000;
+}
+
+.quvvat {
+  display: flex;
+  position: absolute;
+  top: 0;
+  gap: 10px;
+  color: #fff;
+}
+
+.translate {
+  position: absolute;
+  top: 250px;
+  display: flex;
+  flex-direction: column;
+  left: 50px;
+  gap: 15px;
+}
+.translate input {
+  height: 100px;
+  width: 250px;
+  text-align: start;
+  border: none;
+  background: rgba(255, 255, 255, 0.5254901961);
+  outline: none;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.translate button {
+  background: rgba(218, 139, 139, 0.6117647059);
+  border: none;
+  padding: 8px;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.title_translate {
+  position: absolute;
+  bottom: 450px;
+  left: 100px;
+}
+.title_translate h3 {
+  font-family: monospace;
+  font-size: 30px;
+  text-shadow: -5px -2px 5px #000;
+  font-weight: 700;
+  color: #fff;
+}
+
+a {
+  position: absolute;
+  left: 60px;
+  bottom: 50px;
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.rezults {
+  width: 300px;
+  left: 0;
+  position: absolute;
+  bottom: 180px;
+}
