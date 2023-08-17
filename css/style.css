@@ -469,3 +469,16 @@ body .iphone .bottom .camera_bottom {
   position: absolute;
   bottom: 180px;
 }
+
+.camera #openCameraButton {
+  position: absolute;
+  top: 250px;
+  left: 5rem;
+  padding: 18px;
+  font-size: 30px;
+  border: none;
+  background: rgba(255, 255, 255, 0.5450980392);
+  border-radius: 50%;
+  color: #fff;
+  text-shadow: 1px 5px 5px #000;
+}

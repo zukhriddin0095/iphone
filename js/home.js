@@ -5,14 +5,27 @@ const Telegram = document.querySelector(".telegram");
 const clock15 = document.querySelector(".clock");
 const Alarm = document.querySelector(".alarm-set");
 const latin = document.querySelector(".latin");
+const camera = document.querySelector(".camera_bottom");
 
 const batteryProcent = document.querySelector(".battery");
 
 Instagram.addEventListener("click", () => {
   location =
     "https://instagram.com/zukhriddin0095?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D";
-}) 
+});
 
+camera.addEventListener("click", () => {
+  location = "../camera.html";
+   navigator.mediaDevices
+     .getUserMedia({ video: true })
+     .then((stream) => {
+       // Kameradan kelayotgan videoni video elementiga bog'lash
+       videoElement.srcObject = stream;
+     })
+     .catch((error) => {
+       console.error("Kamerani ochishda xato yuz berdi:", error);
+     });
+});
 
 clock15.addEventListener("click", () => {
   location = "../clock.html";

@@ -1,14 +1,4 @@
-const batteryProcent = document.querySelector(".battery");
-const getTitle = document.querySelector(".gettexts");
 
-if ("navigator" in window && "getBattery" in navigator) {
-  navigator.getBattery().then(function (battery) {
-    batteryQuvatti = battery.level;
-
-    batteryProcent.innerHTML = `<p class="quvvat"> ${batteryQuvatti}%</p> `;
-  });
-} else {
-}
 
 function convertAndDisplay() {
   let kirilText = document.getElementById("kirilInput").value;
@@ -42,3 +32,5 @@ function convertAndDisplay() {
     var kirilText = "зухриддин!";
 var latinText = convertToLatin(kirilText);
 console.log(latinText); 
+
+
